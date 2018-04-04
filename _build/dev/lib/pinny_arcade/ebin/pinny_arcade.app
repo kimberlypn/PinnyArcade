@@ -1,7 +1,7 @@
 {application,pinny_arcade,
              [{applications,[kernel,stdlib,elixir,logger,runtime_tools,
                              gettext,phoenix_pubsub,cowboy,phoenix_html,
-                             phoenix,phoenix_live_reload,postgrex,
+                             phoenix,phoenix_live_reload,postgrex,distillery,
                              phoenix_ecto]},
               {description,"pinny_arcade"},
               {modules,['Elixir.PinnyArcade','Elixir.PinnyArcade.Application',
