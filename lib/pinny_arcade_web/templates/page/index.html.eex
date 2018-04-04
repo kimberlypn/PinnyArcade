@@ -1,5 +1,5 @@
+<h1>Kimmy's Pinny Arcade</h1>
 <div id="index">
-  <h1>Kimmy's Pinny Arcade</h1>
   <div class="row">
   <%= for pin <- @pins do %>
     <div class="col-sm-3">
