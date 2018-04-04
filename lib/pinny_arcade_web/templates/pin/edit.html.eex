@@ -1,0 +1,5 @@
+<h2>Edit Pin</h2>
+
+<%= render "form.html", Map.put(assigns, :action, pin_path(@conn, :update, @pin)) %>
+
+<span><%= link "Back", to: pin_path(@conn, :index) %></span>

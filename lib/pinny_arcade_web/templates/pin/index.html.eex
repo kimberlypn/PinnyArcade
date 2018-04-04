@@ -1,0 +1,30 @@
+<h2>Listing Pins</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for pin <- @pins do %>
+    <tr>
+      <td><%= pin.name %></td>
+      <td><%= pin.quantity %></td>
+      <td><%= pin.price %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: pin_path(@conn, :show, pin), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: pin_path(@conn, :edit, pin), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: pin_path(@conn, :delete, pin), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Pin", to: pin_path(@conn, :new) %></span>
