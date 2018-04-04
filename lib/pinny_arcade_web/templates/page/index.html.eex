@@ -1,3 +1,19 @@
-<div>
-  <h1>Pinny Arcade</h1>
+<div id="index">
+  <h1>Kimmy's Pinny Arcade</h1>
+  <div class="row">
+  <%= for pin <- @pins do %>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+        <b><%= pin.name %></b>
+          <img class="card-img-top" src=<%= "/images/" <> pin.img_src %>
+            alt=<%= pin.name %>>
+          <p>
+            Quantity: <%= pin.quantity %> | $<%= pin.price %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
 </div>

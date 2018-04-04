@@ -1,1 +1,26 @@
 @import "bootstrap";
+
+#index .card {
+  text-align: center;
+  border: 0;
+}
+
+#index .card-header {
+  border: 0;
+  background: none;
+}
+
+#index .card-body {
+  height: 250px;
+}
+
+#index img {
+  height: 80%;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#index {
+  text-align: center;
+}
