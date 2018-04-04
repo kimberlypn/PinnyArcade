@@ -16,7 +16,8 @@ defmodule PinnyArcadeWeb.Router do
   scope "/", PinnyArcadeWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
+    get "/", PinController, :index
     resources "/pins", PinController
   end
 

@@ -24,6 +24,12 @@
   </div>
 
   <div class="form-group">
+    <%= label f, :img_src, "Image Source", class: "control-label" %>
+    <%= text_input f, :img_src, class: "form-control" %>
+    <%= error_tag f, :img_src %>
+  </div>
+
+  <div class="form-group">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>
