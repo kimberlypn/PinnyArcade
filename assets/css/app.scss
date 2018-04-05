@@ -36,6 +36,9 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
+}
+
+.centered .card-body {
   text-align: center;
 }
 
@@ -50,6 +53,10 @@ h1 {
 
 .btn {
   font-size: 21px;
+}
+
+.centered #login-form {
+  text-align: left;
 }
 
 #index .card {

@@ -17,8 +17,12 @@ defmodule PinnyArcadeWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    # get "/", PinController, :index
+    get "/login", PageController, :login
     resources "/pins", PinController
+    resources "/users", UserController, except: [:new, :edit]
+
+    post "/session", SessionController, :create
+    delete "/session", SessionController, :delete
   end
 
   # Other scopes may use custom stacks.

@@ -1,15 +1,9 @@
-<script>
-  function viewPin(id) {
-    alert(id);
-  }
-</script>
-
 <h1>Kimmy's Pinny Arcade</h1>
 <div id="index">
   <div class="row" id="log-in">
     <div class="col-sm-3 offset-sm-9">
       <div class="card">
-        <a href=#>
+        <a href="/login">
           <img src="/images/log-in.png" alt="log-in" />
         </a>
       </div>
