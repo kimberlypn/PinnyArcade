@@ -1,13 +1,39 @@
+<script>
+  function viewPin(id) {
+    alert(id);
+  }
+</script>
+
 <h1>Kimmy's Pinny Arcade</h1>
 <div id="index">
+  <div class="row" id="log-in">
+    <div class="col-sm-3 offset-sm-9">
+      <div class="card">
+        <a href=#>
+          <img src="/images/log-in.png" alt="log-in" />
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <b>ADD PIN</b>
+        <br />
+        <div id="add-pin"><a href="/pins/new">+</a></div>
+      </div>
+    </div>
+  </div>
   <%= for pin <- @pins do %>
     <div class="col-sm-3">
       <div class="card">
         <div class="card-body">
-        <b><%= pin.name %></b>
+          <b><%= String.upcase(pin.name) %></b>
+          <a href= <%= "/pins/" <> Integer.to_string(pin.id) %>>
           <img class="card-img-top" src=<%= "/images/" <> pin.img_src %>
             alt=<%= pin.name %>>
+          </a>
           <p>
             Quantity: <%= pin.quantity %> | $<%= pin.price %>
           </p>

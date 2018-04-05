@@ -1,23 +1,14 @@
-<h2>Show Pin</h2>
-
-<ul>
-
-  <li>
-    <strong>Name:</strong>
-    <%= @pin.name %>
-  </li>
-
-  <li>
-    <strong>Quantity:</strong>
-    <%= @pin.quantity %>
-  </li>
-
-  <li>
-    <strong>Price:</strong>
-    <%= @pin.price %>
-  </li>
-
-</ul>
-
-<span><%= link "Edit", to: pin_path(@conn, :edit, @pin) %></span>
-<span><%= link "Back", to: pin_path(@conn, :index) %></span>
+<div class="centered">
+  <div class="card-body">
+    <div class="card-header">
+      <%= @pin.name %>
+    </div>
+    <img class="card-img-top" src=<%= "/images/" <> @pin.img_src %>
+    <br />
+    <p>
+      Quantity: <%= @pin.quantity %> | $<%= @pin.price %>
+    </p>
+  </div>
+  <span><%= link "Edit", to: pin_path(@conn, :edit, @pin) %></span>
+  <span><%= link "Back", to: page_path(@conn, :index) %></span>
+</div>

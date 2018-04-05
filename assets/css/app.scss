@@ -12,7 +12,8 @@
 
 body {
   font-family: 'PixelOperator';
-  font-size: 20px;
+  font-size: 21px;
+  color: #4c697c;
 }
 
 h1 {
@@ -22,18 +23,43 @@ h1 {
   margin-bottom: 30px;
 }
 
+.card-header {
+  border: 0;
+  background: none;
+  font-weight: bold;
+}
+
+/* Centers a div in the middle of the screen */
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  text-align: center;
+}
+
+.centered img {
+  height: 30%;
+  width: 30%;
+}
+
+.centered .card-header {
+  font-size: 30px;
+}
+
+.btn {
+  font-size: 21px;
+}
+
 #index .card {
   text-align: center;
   border: 0;
 }
 
-#index .card-header {
-  border: 0;
-  background: none;
-}
-
 #index .card-body {
   height: 250px;
+  margin-bottom: 20px;
 }
 
 #index img {
@@ -41,4 +67,34 @@ h1 {
   width: 80%;
   display: block;
   margin: auto;
+}
+
+#index img:hover {
+  opacity: 0.5;
+}
+
+#back {
+  text-align: right;
+}
+
+#add-pin {
+  font-size: 100px;
+}
+
+#add-pin:hover {
+  opacity: 0.5;
+}
+
+#add-pin a {
+  color: #4c697c;
+  text-decoration: none;
+}
+
+#log-in .card {
+  padding-left: 110px;
+}
+
+#log-in img {
+  height: 30%;
+  width: 30%;
 }
