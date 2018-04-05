@@ -14,7 +14,7 @@ config :pinny_arcade, PinnyArcadeWeb.Endpoint,
 # Configure your database
 config :pinny_arcade, PinnyArcade.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "pinny_arcade",
+  password: "Jooth6ahwoo1",
   database: "pinny_arcade_prod",
   pool_size: 15
