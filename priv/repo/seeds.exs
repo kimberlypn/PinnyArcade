@@ -62,6 +62,14 @@ defmodule Seeds do
     Repo.insert!(%Pin{ name: "Vault Girl", quantity: 4, price: 25.0, img_src: "pin_vault_girl.png" })
     Repo.insert!(%Pin{ name: "Waffle Travis", quantity: 1, price: 18.0, img_src: "pin_waffle_travis.png" })
   end
+
+  def seed(:dev) do
+    run()
+  end
+
+  def seed(:prod) do
+    # run()
+  end
 end
 
-Seeds.run
+Seeds.seed(Mix.env)

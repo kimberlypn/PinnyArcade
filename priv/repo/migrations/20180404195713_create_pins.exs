@@ -6,7 +6,7 @@ defmodule PinnyArcade.Repo.Migrations.CreatePins do
       add :name, :string
       add :quantity, :integer, default: 1
       add :price, :float, default: 0.0
-      add :img_src, :string
+      add :img_src, :string, default: "default.png"
 
       timestamps()
     end

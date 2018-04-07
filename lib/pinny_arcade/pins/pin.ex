@@ -7,7 +7,7 @@ defmodule PinnyArcade.Pins.Pin do
     field :name, :string
     field :price, :float, default: 0.0
     field :quantity, :integer, default: 1
-    field :img_src, :string
+    field :img_src, :string, default: "default.png"
 
     timestamps()
   end

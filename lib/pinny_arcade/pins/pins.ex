@@ -18,7 +18,8 @@ defmodule PinnyArcade.Pins do
 
   """
   def list_pins do
-    Repo.all(Pin)
+    Repo.all(from p in Pin,
+      order_by: [asc: :name])
   end
 
   @doc """
